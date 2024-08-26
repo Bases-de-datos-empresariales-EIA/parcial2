@@ -46,7 +46,7 @@ Responda las preguntas listadas a continuación. Cada pregunta tiene un valor de
 - Respuesta correcta: 5%
 - Query: 5%
 
-Puedes conectarte a la base de datos usando las siguientes credenciales:
+Puede conectarse a la base de datos usando las siguientes credenciales:
 ```
 host: aws-0-us-east-1.pooler.supabase.com
 port: 6543
