@@ -46,6 +46,16 @@ Responda las preguntas listadas a continuación. Cada pregunta tiene un valor de
 - Respuesta correcta: 5%
 - Query: 5%
 
+Puedes conectarte a la base de datos usando las siguientes credenciales:
+```
+host: aws-0-us-east-1.pooler.supabase.com
+port: 6543
+database: postgres
+username: parcial.pqihitksbcrxfddfmzfg
+password: ***********
+schema: parcial
+```
+
 Preguntas:
 
 - Escriba un query que calcule el total de ingresos generados por cada cliente a través de sus contratos. Deberá sumar el valor de las ventas de todos los contratos asociados a cada cliente y mostrar el nombre del cliente junto con los ingresos totales. Responda:
