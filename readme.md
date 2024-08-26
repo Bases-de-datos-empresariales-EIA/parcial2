@@ -1,6 +1,4 @@
-Aquí tienes la versión revisada de las instrucciones para tu examen parcial de bases de datos:
-
----
+# Examen parcial de Bases de datos Empresariales
 
 ### 1. Construcción de un Diagrama Entidad-Relación (40%)
 
