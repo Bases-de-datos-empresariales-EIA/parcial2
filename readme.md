@@ -6,14 +6,14 @@
 Construye un diagrama Entidad-Relación (ERD) basado en la siguiente descripción del negocio.
 
 **Descripción del negocio:**  
-Una academia de música llamada "Notas y Acordes" ofrece clases de diversos instrumentos musicales. La academia cuenta con un catálogo de cursos, cada uno con un nombre, descripción, nivel de dificultad (básico, intermedio, avanzado), y precio. Los estudiantes pueden inscribirse en uno o más cursos. Cada estudiante tiene un nombre, correo electrónico y teléfono. La academia también registra a los instructores, quienes imparten uno o varios cursos. Cada instructor tiene un nombre, especialidad y años de experiencia.
+Una plataforma de streaming de películas llamada "CineStream" ofrece acceso a una variedad de contenido audiovisual. La plataforma mantiene un catálogo de películas, cada una con un título, director, género, año de lanzamiento y duración. Los suscriptores pueden agregar múltiples películas a su lista de reproducción. Cada suscriptor tiene un nombre de usuario, correo electrónico y fecha de suscripción. CineStream también registra a los estudios de cine, quienes producen una o varias películas. Cada estudio tiene un nombre, país de origen y año de fundación.
 
 **Consideraciones:**
 
-- Un estudiante puede inscribirse en múltiples cursos.
-- Cada inscripción está asociada a un solo curso y a un solo estudiante.
-- Un curso puede ser impartido por múltiples instructores.
-- Un instructor puede impartir múltiples cursos.
+- Un suscriptor puede agregar múltiples películas a su lista de reproducción.
+- Cada entrada en la lista de reproducción está asociada a una sola película y a un solo suscriptor.
+- Una película puede ser producida por múltiples estudios (en caso de co-producciones).
+- Un estudio puede producir múltiples películas.
 
 **Criterios de calificación:**
 
@@ -65,21 +65,21 @@ schema: parcial
 
 **Preguntas:**
 
-1. Escribe una consulta SQL que calcule el total de ingresos generados por cada cliente a través de sus contratos. Debes sumar el valor de las ventas de todos los contratos asociados a cada cliente y mostrar el nombre del cliente junto con los ingresos totales.
+1. Escribe una consulta SQL que calcule el total de horas reportadas por contrato para cada cliente. 
 
-   - **Pregunta:** ¿Cuál es el top 3 de clientes que han generado más ingresos? ¿Cuánto ingreso generó cada uno de ellos? (10%)
+   - **Pregunta:** ¿Cuál es el top 3 de clientes con el mayor gasto de horas por contrato? ¿Cuál es el total de horas para cada uno de ellos? (10%)
 
-2. Formula una consulta SQL que calcule el total de horas trabajadas reportadas por cada usuario durante julio de 2024. Los resultados deben incluir el nombre, apellido y total de horas reportadas de cada usuario.
+2. Formula una consulta SQL que determine el número de reportes generados por cada usuario durante el primer trimestre de 2024. Los resultados deben incluir el nombre, apellido y total de reportes generados por cada usuario.
 
-   - **Pregunta:** ¿Cuál es el top 3 de usuarios con más horas reportadas en julio de 2024? ¿Cuántas horas reportó cada uno de ellos? (10%)
+   - **Pregunta:** ¿Cuál es el top 3 de usuarios con más reportes generados en el primer trimestre de 2024? ¿Cuántos reportes generó cada uno de ellos? (10%)
 
-3. Crea una consulta SQL que calcule el total de horas reportadas en cada contrato durante el año en curso. Los resultados deben incluir el nombre del contrato y el número total de reportes.
+3. Crea una consulta SQL que calcule el valor promedio de venta de los contratos para cada cliente. Los resultados deben incluir nombre del cliente, el nit y el promedio de venta.
 
-   - **Pregunta:** ¿Cuáles son los 3 contratos con más horas reportadas durante 2024? ¿Cuántas horas se han reportado en cada uno de ellos? (10%)
+   - **Pregunta:** ¿Cuáles son los 5 clientes con el promedio más alto en ventas? ¿Cuál es el valor promedio de venta para cada uno de estos clientes? (10%)
 
-4. Formula una consulta SQL que muestre el total de horas trabajadas por mes y año durante 2023.
+4. Formula una consulta SQL que muestre el total de horas trabajadas por mes durante el primer semestre de 2024.
 
-   - **Pregunta:** ¿Cuál fue el mes con más horas trabajadas en 2023? ¿Cuántas horas se trabajaron en ese mes? (10%)
+   - **Pregunta:** ¿Cuál fue el mes con menos horas trabajadas en el primer semestre de 2024? ¿Cuántas horas se trabajaron en ese mes? (10%)
 
-5. Construye una consulta SQL que calcule el reporte de horas más grande generado por cada usuario.
-   - **Pregunta:** ¿Cuáles son los dos usuarios con los reportes individuales más grandes y cuántas horas reportó cada uno? (10%)
+5. Construye una consulta SQL que identifique el contrato con el costo más bajo para cada cliente. Esta consulta debe excluir contratos de costo 0.
+   - **Pregunta:** ¿Cuáles son los dos clientes con los contratos de menor costo (sin incluir contratos de costo 0), y cuál es el costo de estos contratos? (10%)
